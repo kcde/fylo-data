@@ -112,6 +112,11 @@ body {
 }
 
 @media (min-width: 960px) {
+  #container {
+    margin-left: auto;
+    max-width: 900px;
+    margin-right: auto;
+  }
   body {
     background-image: url(./images/bg-desktop.svg);
     background-color: hsl(229, 57%, 11%);
@@ -120,6 +125,9 @@ body {
     background-repeat: no-repeat;
   }
 
+  #box2 {
+    position: relative;
+  }
   #container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -131,11 +139,9 @@ body {
   #remainder {
     clip-path: polygon(0% 0%, 100% 4%, 100% 100%, 100% 100%, 85% 77%, 0% 75%);
     position: absolute;
-    top: 5rem;
-    right: 100px;
+    top: -3rem;
+    right: 3rem;
     border-bottom-right-radius: 0;
     padding-bottom: 3rem;
-    margin-bottom: 0;
-    margin-top: 25rem;
   }
 }
